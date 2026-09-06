@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+"""
+Plots a scatter graph of men's height versus weight.
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 

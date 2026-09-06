@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-
+"""
+Plots a line graph of a cubic function.
+"""
 import numpy as np
 from matplotlib import pyplot as plt
 
