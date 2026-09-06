@@ -1,4 +1,4 @@
-#/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Plots two line graphs showing the exponential decay of C-14 and Ra-226.
 """

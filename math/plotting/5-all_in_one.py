@@ -32,19 +32,19 @@ student_grades = np.random.normal(68, 15, 50)
 fig = plt.figure()
 fig.suptitle("All in One")
 
-# Plot 1: Line Graph 
+# Plot 1: Line Graph
 ax1 = plt.subplot2grid((3, 2), (0, 0))
 ax1.plot(np.arange(0, 11), y0, 'r-')
 ax1.set_xlim(0, 10)
 
-# Plot 2: Scatter Plot 
+# Plot 2: Scatter Plot
 ax2 = plt.subplot2grid((3, 2), (0, 1))
 ax2.scatter(x1, y1, color='magenta')
 ax2.set_title("Men's Height vs Weight", fontsize='x-small')
 ax2.set_xlabel("Height (in)", fontsize='x-small')
 ax2.set_ylabel("Weight (lbs)", fontsize='x-small')
 
-# Plot 3: Log Scale 
+# Plot 3: Log Scale
 ax3 = plt.subplot2grid((3, 2), (1, 0))
 ax3.plot(x2, y2)
 ax3.set_title("Exponential Decay of C-14", fontsize='x-small')
