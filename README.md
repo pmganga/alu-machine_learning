@@ -1,1 +1,1 @@
-# Linear Algebra and Machine Learning" 
+"Linear Algebra Project" 
