@@ -1,1 +1,1 @@
-echo "# Linear Algebra and Machine Learning" > README.md
+# Linear Algebra and Machine Learning" 
