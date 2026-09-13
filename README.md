@@ -1,1 +1,1 @@
-# "Linear Algebra Project"
+# "Linear algebra project"
