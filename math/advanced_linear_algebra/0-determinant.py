@@ -4,7 +4,8 @@
 
 def determinant(matrix):
     """Calculates the determinant of a matrix."""
-    if type(matrix) is not list or not all(type(row) is list for row in matrix):
+    if type(matrix) is not list or not all(
+            type(row) is list for row in matrix):
         raise TypeError("matrix must be a list of lists")
 
     if matrix == [[]]:
