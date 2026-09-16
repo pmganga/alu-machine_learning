@@ -18,7 +18,8 @@ def determinant(matrix):
 
 def minor(matrix):
     """Calculates the minor matrix of a matrix."""
-    if type(matrix) is not list or not all(type(row) is list for row in matrix):
+    if type(matrix) is not list or not all(
+            type(row) is list for row in matrix):
         raise TypeError("matrix must be a list of lists")
 
     if not matrix or matrix == [[]]:
@@ -35,7 +36,11 @@ def minor(matrix):
     for i in range(n):
         minor_row = []
         for j in range(n):
-            sub_matrix = [row[:j] + row[j+1:] for r_idx, row in enumerate(matrix) if r_idx != i]
+            sub_matrix = [
+                row[:j] + row[j+1:]
+                for r_idx, row in enumerate(matrix)
+                if r_idx != i
+            ]
             minor_row.append(determinant(sub_matrix))
         minor_mat.append(minor_row)
 
