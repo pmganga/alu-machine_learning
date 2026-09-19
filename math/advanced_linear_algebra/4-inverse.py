@@ -18,7 +18,8 @@ def determinant(matrix):
 
 def inverse(matrix):
     """Calculates the inverse of a matrix."""
-    if type(matrix) is not list or not all(type(row) is list for row in matrix):
+    if type(matrix) is not list or not all(
+            type(row) is list for row in matrix):
         raise TypeError("matrix must be a list of lists")
 
     if not matrix or matrix == [[]]:
@@ -39,7 +40,11 @@ def inverse(matrix):
     for i in range(n):
         cofactor_row = []
         for j in range(n):
-            sub_matrix = [row[:j] + row[j+1:] for r_idx, row in enumerate(matrix) if r_idx != i]
+            sub_matrix = [
+                row[:j] + row[j+1:]
+                for r_idx, row in enumerate(matrix)
+                if r_idx != i
+            ]
             minor_val = determinant(sub_matrix)
             cofactor_row.append(minor_val * ((-1) ** (i + j)))
         cofactor_mat.append(cofactor_row)
